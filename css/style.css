@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeeee;
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+}
+.container{
+    width: 1400px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container .box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100px;
+    height: 140px;
+    margin: 60px;
+}
+.container .box .img{
+    width: 80px;
+    height: 80px;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.1),
+    -5px -5px 9px rgba(114, 102, 186, 1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeeee;
+    transition: box-shadow .2s ease-out;
+    position: relative;
+}
+
+.container .box .img img{
+    width: 60px;
+    transition: width 0.2s ease-out;
+}
+.container .box p{
+    color: black;
+    font-weight: 600;
+    //color: slategrey;
+}
+.container .box .img:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px rgba(114, 102, 186, 0.8),
+    inset 5px 5px 9px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 9px rgba(255, 255, 255, 1);
+    transition: box-shadow .2s ease-out;
+}
+.container .box .img:hover img{
+    width: 58px;
+    transition: width 0.2s ease-out;
+}
+.search-container{
+    
+    width: 1200px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 160px;
+}
+.parent {
+    position: relative;
+}
+.searcher {
+    width: 800px;
+    height: 60px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: center;
+    border-radius: 60px;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url("./images/search.png") no-repeat -2px -99px;
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
